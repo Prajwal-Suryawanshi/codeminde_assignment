@@ -30,16 +30,12 @@ public class Employee_bonus {
 		emplist.add(new Employee("Rahul",90000,"male"));
 		emplist.add(new Employee("ajay",30000,"male"));
 		
-		//function
-		//calc bonus and return bonus
+		
 		Function<Employee,Integer> fobj=emp->(emp.esalary*10)/100;
 	
-		//predicate
-		//check value of bonus is greater or not
+		
 		Predicate<Integer> pobj=b->b>=5000;
 		
-		//consumer
-		//it give data of employee
 		Consumer <Employee> cobj=emp->{
 					System.out.println(emp.ename);
 					System.out.println(emp.esalary);
